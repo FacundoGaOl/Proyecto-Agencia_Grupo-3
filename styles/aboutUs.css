@@ -1,11 +1,77 @@
-/* Reinicio basico */
+/* ---- RESET ---- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Fuente estilo comic */
+/* ---- BODY ---- */
 body {
-    font-family: 'Comic Neue', cursive;
+    font-family: 'Comic Neue', sans-serif;
+    background-color: #f7f3e9; /* Blanco estilo papel antiguo */
+    color: #160803;
+    line-height: 1.6;
+    padding-bottom: 3rem;
+}
+
+/* ---- SECCIÓN HISTORIA ---- */
+#historia {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: #fff9e6; /* papel antiguo suave */
+    border: 3px solid #160803;
+    border-radius: 12px;
+    box-shadow: 6px 6px 0px #160803;
+}
+
+#historia h2 {
+    font-family: 'Bangers', cursive;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+
+/* ---- SECCIÓN FUNDADORES ---- */
+.card {
+    background-color: #fffdf4 !important;  /* Beige tipo papel */
+    border: 3px solid #160803 !important;
+    border-radius: 12px !important;
+    box-shadow: 6px 6px 0px #160803 !important;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+/* Titulos de fundadores */
+.card-title {
+    font-family: 'Bangers', cursive;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+/* ---- VALORES ---- */
+.valor-card {
+    background-color: #fffdf4;
+    border: 3px solid #160803 !important;
+    box-shadow: 6px 6px 0px #160803 !important;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.valor-card:hover {
+    transform: translateY(-10px);
+}
+
+/* ---- ICONOS ---- */
+.valor-card i {
+    font-size: 3rem;
+}
+
+h2, h5 {
+    font-family: "Bangers", cursive;
+
 }
