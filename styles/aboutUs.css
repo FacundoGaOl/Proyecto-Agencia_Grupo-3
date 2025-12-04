@@ -1,77 +1,200 @@
-/* ---- RESET ---- */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+/* ------ Sección general ------ */
+
+#galeria {
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
 }
 
-/* ---- BODY ---- */
-body {
-    font-family: 'Comic Neue', sans-serif;
-    background-color: #f7f3e9; /* Blanco estilo papel antiguo */
-    color: #160803;
-    line-height: 1.6;
-    padding-bottom: 3rem;
+#galeria h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: #222;
 }
 
-/* ---- SECCIÓN HISTORIA ---- */
-#historia {
-    max-width: 900px;
-    margin: 3rem auto;
-    padding: 2rem;
-    background: #fff9e6; /* papel antiguo suave */
-    border: 3px solid #160803;
-    border-radius: 12px;
-    box-shadow: 6px 6px 0px #160803;
+/* ------ GRID DE IMÁGENES ------ */
+
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
 }
 
-#historia h2 {
+/* Cada item mantiene el mismo tamaño visual */
+.galeria-item {
+  aspect-ratio: 4 / 3;   /* <-- ajusta esta proporción si deseas otro formato */
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+/* Las imágenes rellenan el espacio sin deformarse */
+.galeria-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* Recorta sin deformar */
+  transition: transform 0.3s ease;
+}
+
+/* Efecto suave en hover (opcional, estilo elegante) */
+.galeria-item:hover img {
+  transform: scale(1.05);
+}
+
+/* ------ RESPONSIVE ------ */
+
+@media (max-width: 900px) {
+  .galeria-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .galeria-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #galeria h2 {
+    font-size: 2rem;
+  }
+}
+
+
+#historia h2{
     font-family: 'Bangers', cursive;
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 1.5rem;
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color: #160803;
+  text-align: center;
+}
+
+.p {
+  font-family: 'Comic Neue';
+  font-size: 0.9rem;
+  line-height: 1.2;
 }
 
 
-/* ---- SECCIÓN FUNDADORES ---- */
+#fundadores {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#fundadores h2 {
+  font-family: 'Bangers', cursive;
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color: #160803;
+}
+
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
 .card {
-    background-color: #fffdf4 !important;  /* Beige tipo papel */
-    border: 3px solid #160803 !important;
-    border-radius: 12px !important;
-    box-shadow: 6px 6px 0px #160803 !important;
-    transition: transform 0.2s ease-in-out;
+  background: #fffdfa;
+  border: 2px solid #000;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 6px 6px 0 #000;
+  transition: transform 0.2s;
 }
 
+//Efecto cómic
 .card:hover {
-    transform: translateY(-8px);
+  transform: translateY(-6px);
 }
 
-/* Titulos de fundadores */
-.card-title {
-    font-family: 'Bangers', cursive;
-    font-size: 1.5rem;
-    margin-top: 0.5rem;
+.card img {
+  width: 100%;
+  max-width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  display: block;
+  border: 3px solid #000;
 }
 
-/* ---- VALORES ---- */
+
+.card h3 {
+  font-family: 'Bangers', cursive;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-family: 'Comic Neue', cursive;
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+
+#valores {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#valores h2 {
+  font-family: 'Bangers', cursive;
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color: #160803;
+}
+
+
+.valores-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 .valor-card {
-    background-color: #fffdf4;
-    border: 3px solid #160803 !important;
-    box-shadow: 6px 6px 0px #160803 !important;
-    border-radius: 12px;
-    transition: 0.3s;
+  background: #fffdfa;   
+  border: 3px solid #000;     
+  width: 220px;
+  height: 220px;
+  padding: 25px;
+  border-radius: 50%;         
+  box-shadow: 6px 6px 0 #000; 
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s;
 }
 
 .valor-card:hover {
-    transform: translateY(-10px);
+  transform: translateY(-6px);
 }
 
-/* ---- ICONOS ---- */
 .valor-card i {
-    font-size: 3rem;
+  font-size: 2.8rem;
+  margin-bottom: 10px;
 }
 
-h2, h5 {
-    font-family: "Bangers", cursive;
-
+.valor-card h3 {
+  font-family: 'Bangers', cursive;
+  font-size: 1.3rem;
+  margin-bottom: 8px;
 }
+
+.valor-card p {
+  font-family: 'Comic Neue', cursive;
+  font-size: 0.9rem;
+  line-height: 1.2;
+}
+
