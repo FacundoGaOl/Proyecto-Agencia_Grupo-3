@@ -41,9 +41,8 @@
   }
 }
 
-
 #historia h2{
-    font-family: 'Bangers', cursive;
+  font-family: "Bebas+Neue", cursive;
   font-size: 3rem;
   margin-bottom: 40px;
   color: #160803;
@@ -63,7 +62,7 @@
 }
 
 #fundadores h2 {
-  font-family: 'Bangers', cursive;
+  font-family: 'Bebas Neue', cursive;
   font-size: 3rem;
   margin-bottom: 40px;
   color: #160803;
@@ -124,7 +123,7 @@
 }
 
 #valores h2 {
-  font-family: 'Bangers', cursive;
+  font-family: 'Bebas Neue', cursive;
   font-size: 3rem;
   margin-bottom: 40px;
   color: #160803;
