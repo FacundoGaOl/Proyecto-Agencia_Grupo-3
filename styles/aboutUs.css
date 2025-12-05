@@ -88,7 +88,7 @@ section {
 }
 
 #fundadores {
-    background-color: #;
+    background-color: #5B4A9A;
 }
 
 .cards-grid {
@@ -142,9 +142,11 @@ section {
 }
 
 .valor-card {
-    background: white;
-    padding: 25px;
-    border-radius: 14px;
+    background: #FD9326;
+    padding: 18px;
+    border-radius: 25px;
+    max-width: 200px;
+    margin: auto;
     text-align: center;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     transition: transform .3s ease, box-shadow .3s ease;
