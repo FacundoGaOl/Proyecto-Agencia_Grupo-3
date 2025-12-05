@@ -1,134 +1,179 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Nosotros</title>
-    <link rel="stylesheet" href="../styles/aboutUs.css">
-    <link rel="stylesheet" href=styles/index.css"">
-</head>
-<body>
+/* -----------------------------------
+   FUENTES
+----------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap');
 
-    <section id="galeria">
-      
+/* -----------------------------------
+   ESTILOS GENERALES
+----------------------------------- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    color: #222;
+    background-color: #f7f7f7;
+    line-height: 1.6;
+}
 
-  <div class="galeria-grid">
-    <div class="galeria-item">
-      <img src="../img/mundoDeTinta1.jpg" alt="Imagen estilo cómic del equipo Mundo de Tinta">
-    </div>
+h2 {
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 1px;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #111;
+}
 
-    <div class="galeria-item">
-      <img src="../img/MundoDeTinta2.png"" alt="Imagen estilo cómic del equipo Mundo de Tinta">
-    </div>
+section {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
 
-    <div class="galeria-item">
-      <img src="../img/MundoDeTinta3.png" alt="Imagen estilo cómic del equipo Mundo de Tinta">
-    </div>
-  </div>
-</section>
+/* -----------------------------------
+   GALERÍA
+----------------------------------- */
+#galeria {
+    background-color: #fff;
+}
 
- 
+.galeria-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
 
-    <section id="historia">
+.galeria-item {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #eaeaea;
+}
 
-    
-      <h2>Nuestra Historia</h2>
+.galeria-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 🔥 Hace que TODAS las fotos encajen aunque tengan proporciones diferentes */
+    display: block;
+    transition: transform .4s ease;
+}
 
-      <p>Mundo de Tinta somos cinco amigos que nos conocimos en un Bootcamp de Full-Stack Development, entre líneas de código y cafés eternos. Durante los descansos descubrimos que había algo que también nos unía además de la programación: la pasión por el mundo del cómic.</p>
+.galeria-item:hover img {
+    transform: scale(1.05);
+}
 
-      <p>Lo que empezó como simples conversaciones sobre sagas, heroes y ediciones coleccionistas, se convirtió en una amistad. Y un día, casi sin pensarlo, surgió la idea:<em>" ¿Y si creamos un espacio para compartir esta afición con más gente?</em></p>
+/* -----------------------------------
+   HISTORIA
+----------------------------------- */
+#historia {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 50px 30px;
+}
 
-      <p>Así nació Mundo de Tinta: un lugar para que cualquier fan del cómic encuentre sus historias favoritas, descubra nuevas aventuras y disfrute comprando desde casa, sin complicaciones.</p>
+#historia p {
+    max-width: 900px;
+    margin: 0 auto 1.2rem auto;
+    font-size: 1.1rem;
+    color: #333;
+}
 
-      <p>Seguimos siendo los mismos cinco amigos que aman leer… solo que ahora lo hacemos acompañados de una comunidad cada vez más grande. Y si estás aquí, ya formas parte de ella.</p>
+/* -----------------------------------
+   FUNDADORES
+----------------------------------- */
+#fundadores {
+    background-color: #fdfdfd;
+}
 
-    </section>
+.cards-grid {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    margin-top: 30px;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.07);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* -----------------------------------
+   VALORES
+----------------------------------- */
+.valores-grid {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    margin-top: 35px;
+}
+
+.valor-card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.valor-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.valor-card i {
+    font-size: 2.8rem;
+    color: #000;
+    margin-bottom: 12px;
+}
+
+.valor-card h3 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.valor-card p {
+    font-size: 0.95rem;
+    color: #444;
+}
 
 
-   
-    <section id="fundadores">
-    <h2>Fundadores</h2>
+@media (max-width: 600px) {
+    h2 {
+        font-size: 2.3rem;
+    }
 
-    <div class="cards-grid">
-
-        <div class="card">
-            <img src="img/fundador1.jpg" alt="Fundador 1">
-            <h3>Nombre</h3>
-            <p>Descripción breve del fundador...</p>
-        </div>
-
-        <div class="card">
-            <img src="img/fundador2.jpg" alt="Fundador 2">
-            <h3>Nombre</h3>
-            <p>Descripción breve del fundador...</p>
-        </div>
-
-        <div class="card">
-            <img src="img/fundador3.jpg" alt="Fundador 3">
-            <h3>Nombre</h3>
-            <p>Descripción breve del fundador...</p>
-        </div>
-
-        <div class="card">
-            <img src="img/fundador4.jpg" alt="Fundador 4">
-            <h3>Nombre</h3>
-            <p>Descripción breve del fundador...</p>
-        </div>
-
-        <div class="card">
-            <img src="img/fundador5.jpg" alt="Fundador 5">
-            <h3>Nombre</h3>
-            <p>Descripción breve del fundador...</p>
-        </div>
-
-        <div class="card">
-            <img src="img/fundador6.jpg" alt="Fundador 6">
-            <h3>Nombre</h3>
-            <p>Descripción breve del fundador...</p>
-        </div>
-
-    </div>
-</section>
-
-<section id="valores">
-    <h2>Nuestros Valores</h2>
-
-    <div class="valores-grid">
-
-        <div class="valor-card">
-            <i class="bi bi-people-fill"></i>
-            <h3>Comunidad</h3>
-            <p>Construimos conexiones sólidas entre todos los miembros.</p>
-        </div>
-
-        <div class="valor-card">
-            <i class="bi bi-book-fill"></i>
-            <h3>Cultura</h3>
-            <p>Fomentamos la apreciación y preservación del arte.</p>
-        </div>
-
-        <div class="valor-card">
-            <i class="bi bi-lightbulb-fill"></i>
-            <h3>Creatividad</h3>
-            <p>Impulsamos ideas que inspiran y transforman.</p>
-        </div>
-
-        <div class="valor-card">
-            <i class="bi bi-hand-thumbs-up-fill"></i>
-            <h3>Respeto al coleccionista</h3>
-            <p>Valoramos y cuidamos cada obra y a quien la disfruta.</p>
-        </div>
-
-        <div class="valor-card">
-            <i class="bi bi-journal-richtext"></i>
-            <h3>Historias que transforman</h3>
-            <p>Cada pieza tiene un relato que deja huella.</p>
-        </div>
-
-    </div>
-</section>
-
-
-</body>
-</html>
-
+    #historia {
+        padding: 40px 20px;
+    }
+}
