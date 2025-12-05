@@ -136,7 +136,7 @@ section {
 ----------------------------------- */
 .valores-grid {
     display: grid;
-    gap: 25px;
+    gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     margin-top: 35px;
 }
@@ -144,7 +144,7 @@ section {
 .valor-card {
     background: #FD9326;
     padding: 18px;
-    border-radius: 25px;
+    border-radius: 40px;
     max-width: 200px;
     margin: auto;
     text-align: center;
@@ -158,9 +158,9 @@ section {
 }
 
 .valor-card i {
-    font-size: 2.8rem;
+    font-size: 1.5 rem;
     color: #000;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .valor-card h3 {
@@ -170,7 +170,7 @@ section {
 }
 
 .valor-card p {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     color: #444;
 }
 
@@ -182,5 +182,10 @@ section {
 
     #historia {
         padding: 40px 20px;
+    }
+}
+@media (min-width: 1200px) {
+    .valores-grid {
+        grid-template-columns: repeat(5, 1fr);
     }
 }
