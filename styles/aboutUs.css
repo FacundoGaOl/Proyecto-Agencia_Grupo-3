@@ -3,9 +3,7 @@
 ----------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap');
 
-/* -----------------------------------
-   ESTILOS GENERALES
------------------------------------ */
+
 body {
     margin: 0;
     padding: 0;
@@ -29,39 +27,60 @@ section {
     max-width: 1100px;
     margin: auto;
 }
-
-/* -----------------------------------
-   GALERÍA
------------------------------------ */
+/* ===== GALERÍA ===== */
 #galeria {
     background-color: #fff;
+    padding: 40px 20px;
 }
 
 .galeria-grid {
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 350px)); 
+    justify-content: center; /* Para que no se estiren a lo ancho */
 }
 
+/* Contenedor */
 .galeria-item {
     width: 100%;
+    aspect-ratio: 3 / 4; /* Mantiene proporción vertical bonita */
     position: relative;
     overflow: hidden;
     border-radius: 12px;
     background: #eaeaea;
 }
 
+/* Imagen */
 .galeria-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* 🔥 Hace que TODAS las fotos encajen aunque tengan proporciones diferentes */
+    object-fit: cover; 
     display: block;
-    transition: transform .4s ease;
+    transition: transform 0.4s ease;
 }
 
+/* Efecto hover */
 .galeria-item:hover img {
     transform: scale(1.05);
 }
+
+/* ===== RESPONSIVE ===== */
+
+/* Tablet: las fotos se hacen un poquito más grandes */
+@media (min-width: 768px) {
+    .galeria-grid {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 380px));
+    }
+}
+
+/* Desktop: limita tamaño para que NO se vean gigantes */
+@media (min-width: 1024px) {
+    .galeria-grid {
+        grid-template-columns: repeat(2, 330px);
+        justify-content: center;
+    }
+}
+
 
 /* -----------------------------------
    HISTORIA
