@@ -1,0 +1,190 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #222;
+    background-color: #5B4A9A;
+    line-height: 1.6;
+}
+
+h2 {
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 1px;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #111;
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+#galeria {
+    background-color: #FD9326;
+    padding: 40px 20px;
+}
+
+.galeria-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 350px)); 
+    justify-content: center; 
+}
+
+.galeria-item {
+    width: 100%;
+    aspect-ratio: 3 / 4; 
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #eaeaea;
+}
+
+.galeria-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.galeria-item:hover img {
+    transform: scale(1.05);
+}
+
+
+@media (min-width: 768px) {
+    .galeria-grid {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 380px));
+    }
+}
+
+@media (min-width: 1024px) {
+    .galeria-grid {
+        grid-template-columns: repeat(2, 330px);
+        justify-content: center;
+    }
+}
+
+
+
+#historia {
+    background-color: #FD9326;
+    border-radius: 12px;
+    padding: 50px 30px;
+}
+
+#historia p {
+    max-width: 900px;
+    margin: 0 auto 1.2rem auto;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+#fundadores {
+    background-color: #5B4A9A;
+}
+
+.cards-grid {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    margin-top: 35px;
+}
+
+.card {
+    background: #FD9326;
+    padding: 15px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.07);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 2px;
+}
+
+.card h3 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 4px;
+    margin-top: 0px;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+
+.valores-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    margin-top: 35px;
+}
+
+.valor-card {
+    background: #FD9326;
+    padding: 18px;
+    border-radius: 100px;
+    max-width: 200px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.valor-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.valor-card i {
+    font-size: 1.5 rem;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.valor-card h3 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.valor-card p {
+    font-size: 0.9rem;
+    color: #444;
+}
+
+
+@media (max-width: 600px) {
+    h2 {
+        font-size: 2.3rem;
+    }
+
+    #historia {
+        padding: 40px 20px;
+    }
+}
+@media (min-width: 1200px) {
+    .valores-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
