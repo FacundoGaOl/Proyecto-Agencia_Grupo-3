@@ -1,15 +1,12 @@
-/* -----------------------------------
-   FUENTES
------------------------------------ */
+
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap');
 
 
 body {
     margin: 0;
     padding: 0;
-    font-family: "Inter", sans-serif;
     color: #222;
-    background-color: #f7f7f7;
+    background-color: #5B4A9A;
     line-height: 1.6;
 }
 
@@ -27,9 +24,9 @@ section {
     max-width: 1100px;
     margin: auto;
 }
-/* ===== GALERÍA ===== */
+
 #galeria {
-    background-color: #fff;
+    background-color: #FD9326;
     padding: 40px 20px;
 }
 
@@ -37,20 +34,18 @@ section {
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(260px, 350px)); 
-    justify-content: center; /* Para que no se estiren a lo ancho */
+    justify-content: center; 
 }
 
-/* Contenedor */
 .galeria-item {
     width: 100%;
-    aspect-ratio: 3 / 4; /* Mantiene proporción vertical bonita */
+    aspect-ratio: 3 / 4; 
     position: relative;
     overflow: hidden;
     border-radius: 12px;
     background: #eaeaea;
 }
 
-/* Imagen */
 .galeria-item img {
     width: 100%;
     height: 100%;
@@ -59,21 +54,17 @@ section {
     transition: transform 0.4s ease;
 }
 
-/* Efecto hover */
 .galeria-item:hover img {
     transform: scale(1.05);
 }
 
-/* ===== RESPONSIVE ===== */
 
-/* Tablet: las fotos se hacen un poquito más grandes */
 @media (min-width: 768px) {
     .galeria-grid {
         grid-template-columns: repeat(auto-fit, minmax(260px, 380px));
     }
 }
 
-/* Desktop: limita tamaño para que NO se vean gigantes */
 @media (min-width: 1024px) {
     .galeria-grid {
         grid-template-columns: repeat(2, 330px);
@@ -82,11 +73,9 @@ section {
 }
 
 
-/* -----------------------------------
-   HISTORIA
------------------------------------ */
+
 #historia {
-    background-color: #fff;
+    background-color: #FD9326;
     border-radius: 12px;
     padding: 50px 30px;
 }
@@ -98,11 +87,8 @@ section {
     color: #333;
 }
 
-/* -----------------------------------
-   FUNDADORES
------------------------------------ */
 #fundadores {
-    background-color: #fdfdfd;
+    background-color: #;
 }
 
 .cards-grid {
