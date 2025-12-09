@@ -1,0 +1,55 @@
+.container {
+    background-color: #77CEC6;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    min-height: 300px;
+    gap: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    ;
+    src: url(../fonts/ComicNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url(../fonts/BebasNeue-Regular.ttf);
+}
+
+h2 {
+    font-family: 'BebasNeue';
+    font-size: 24px;
+}
+
+p {
+    font-family: 'CustomFont';
+    font-size: 16px;
+    text-align: justify;
+}
+
+div {
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+
+.copyright {
+    font-family: 'CustomFont';
+    font-size: 15px;
+    text-align: center;
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
