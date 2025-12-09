@@ -44,6 +44,69 @@
             "state" : "En stock",
             "editorial": "Panini Comics",
             "author": ["Kelly Thompson", "Haayden Sherman"]
+        },
+        {
+            "id": 6,
+            "name" : "Gatusina",
+            "price" : 14,
+            "cover" : "images/Gatusina.jpg",
+            "state" : "Pre-venta",
+            "editorial": "Tomodomo",
+            "author": "Hisa Takano"
+        },
+        {
+            "id": 7,
+            "name" : "Kamen Raider Black 3",
+            "price" : 18,
+            "cover" : "images/kamenRiderBlack3.jpg",
+            "state" : "Pre-venta",
+            "editorial": "Ooso comics",
+            "author": "Shotaro Ishinomori"
+        },
+        {
+            "id": 8,
+            "name" : "Gastroinforme de mi trastorno alimenticio",
+            "price" : 12,
+            "cover" : "https://i1.whakoom.com/large/2f/15/1c22215fe59d47fa92ae463e58f6bc95.jpg?_gl=1*m6izag*_ga*MTExNjAxMzEzNy4xNzYyMTU5MzI3*_ga_7TE1PVSLNM*czE3NjQ5MzgyMzckbzQ1JGcxJHQxNzY0OTM5MjY5JGo1NyRsMCRoMA..",
+            "state" : "Pre-venta",
+            "editorial": "Fandogamia Editorial",
+            "author": "Kabi Nagata"
+        },
+        {
+            "id": 9,
+            "name" : "Absolute Batman 9",
+            "price" :3.30,
+            "cover" : "images/AbsoluteBatman9.jpg",
+            "state" : "En stock",
+            "editorial": "Panini Comics",
+            "author": ["Scott Snyder", "Nick Dragotta"]
+        },
+        {
+            "id": 10,
+            "name" : "Absolute Wonder Woman 9",
+            "price" : 3.3,
+            "cover" : "images/AbsoluteWonderWoman9.jpg",
+            "state" : "En stock",
+            "editorial": "Panini Comics",
+            "author": ["Kelly Thompson", "Haayden Sherman"]
+        },
+                {
+            "id": 11,
+            "name" : "Absolute Batman 9",
+            "price" :3.30,
+            "cover" : "images/AbsoluteBatman9.jpg",
+            "state" : "En stock",
+            "editorial": "Panini Comics",
+            "author": ["Scott Snyder", "Nick Dragotta"]
+        },
+        {
+            "id": 12,
+            "name" : "Absolute Wonder Woman 9",
+            "price" : 3.3,
+            "cover" : "images/AbsoluteWonderWoman9.jpg",
+            "state" : "En stock",
+            "editorial": "Panini Comics",
+            "author": ["Kelly Thompson", "Haayden Sherman"]
         }
     ]
 }

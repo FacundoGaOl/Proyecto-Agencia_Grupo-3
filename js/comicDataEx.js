@@ -1,9 +1,12 @@
 const requestURL = 'json/tiendaComics.json';
 
-function createComicsCard({name, price}) {
+function createComicsCard({name, price, cover}) {
     return `
-        <div>
-            <h3>${name} ${price}€</h3>
+        <div class="card">
+            <img src="${cover}" alt="Portada del comic">
+            <h3>${name}</h3>
+            <h3>${price}€</h3>
+            <button class="buy"> <h3>Comprar</h3></button>
         </div>
     `;
 }
@@ -28,7 +31,7 @@ async function displayComics() {
         const comicsCards = comicsData.productsComics.map(createComicsCard).join('');
         comicSection.innerHTML = comicsCards;
     }else{
-        comicSection.innerHTML = '<p>No se pudieron cargar los datos de las casas.</p>';
+        comicSection.innerHTML = '<p>No hemos podido acceder a la libreria.</p>';
     }
 }
 
